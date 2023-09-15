@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "StarWars";
-    src: url(./font/Starjedi.ttf) format(truetype);
+    src: url(./assets/font/Starjedi.ttf) format(truetype);
 }
 
 body{
