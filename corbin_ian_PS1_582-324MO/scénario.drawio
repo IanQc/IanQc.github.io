@@ -1,0 +1,303 @@
+<mxfile host="65bd71144e">
+    <diagram id="d_ryaEk3887iIKYyWZoM" name="Page-1">
+        <mxGraphModel dx="4833" dy="2511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="102" value="Vous incarnez Anakin Skywalker et vous êtes accompagnez de Obi-Wan Kenobi&lt;br&gt;Votre mission sauvez le chancelier et la galaxie" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1180" y="270" width="260" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" style="edgeStyle=none;html=1;" parent="1" source="103" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-850" y="580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" value="Trou coque du vaisseau" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="106" vertex="1" connectable="0">
+                    <mxGeometry x="0.2781" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-29" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="107" style="edgeStyle=none;html=1;" parent="1" source="103" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="111" value="Hanguar" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="107" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3511" y="2" relative="1" as="geometry">
+                        <mxPoint y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="103" value="Vous survolez le vaisseau et trouver un moyen d'entrer" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1130" y="510" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=none;html=1;" parent="1" source="108" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="1000" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="108" value="Vous attérisez sain et sauf et détruisez tous les droides sur votre passage" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1120" y="800" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="166" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="109" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-510" y="580"/>
+                            <mxPoint x="-510" y="335"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="109" value="Vous mourez par l'impact" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-850" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" style="edgeStyle=none;html=1;" parent="1" source="114" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-790" y="1090" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="121" value="Couloir" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="120" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1767" y="-2" relative="1" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="122" style="edgeStyle=none;html=1;" parent="1" source="114" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="1360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="123" value="Ascenceur" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="122" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4616" y="-2" relative="1" as="geometry">
+                        <mxPoint x="2" y="16" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="124" style="edgeStyle=none;html=1;" parent="1" source="114" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1340" y="1087.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="129" value="bureau de sécurité" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="124" vertex="1" connectable="0">
+                    <mxGeometry x="0.5207" relative="1" as="geometry">
+                        <mxPoint x="44" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="114" value="Vous devez vous dirigez vers le cockpit le plus rapidement possible" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1185" y="965" width="250" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="165" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="127" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-510" y="1090"/>
+                            <mxPoint x="-510" y="335"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="127" value="Trop de droides, vous mourez" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-790" y="1060" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" style="edgeStyle=none;html=1;" parent="1" source="128" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1640" y="1095" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="134" value="Couloir" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="133" vertex="1" connectable="0">
+                    <mxGeometry x="0.34" y="-4" relative="1" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="137" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="128" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="1230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-1410" y="1230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="170" value="Vous trouvez information&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="137" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2681" y="4" relative="1" as="geometry">
+                        <mxPoint x="-65" y="-176" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="128" value="Vous regardez les caméras afin decouvrir dans quel conditons se trouve le cockpit" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1480" y="1060" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="167" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="135" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-1850" y="1095"/>
+                            <mxPoint x="-1850" y="335"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="135" value="Trop de droides, vous mourez" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1760" y="1065" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;" parent="1" source="138" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-790" y="1410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="141" value="Forcez les portes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="139" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1709" y="2" relative="1" as="geometry">
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="142" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;" parent="1" source="138" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="1610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="143" value="Passez par dessus l'ascenceur" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="142" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2498" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="138" value="Ascenceur bloque" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1115" y="1350" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="140" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-510" y="1410"/>
+                            <mxPoint x="-510" y="335"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="140" value="Lorsque vous ouvrez les portes, droides vous tue" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-790" y="1380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;" parent="1" source="144" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="1760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="144" value="Vous grimpez jusqu'en haut et atteigner le cokpit" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1120" y="1610" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;" parent="1" source="147" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="1910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="147" value="Le compte Dooku vous engage en combat" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1120" y="1760" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;" parent="1" source="149" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-850" y="2160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="152" value="L'éxécuter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="150" vertex="1" connectable="0">
+                    <mxGeometry x="0.1886" y="4" relative="1" as="geometry">
+                        <mxPoint x="-13" y="4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="151" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="149" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1060" y="2340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="156" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;" parent="1" source="149" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1310" y="2160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="162" value="Arrêter et apporter en justice" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="156" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2438" y="-2" relative="1" as="geometry">
+                        <mxPoint x="-12" y="2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="149" value="Vous le battez en combat, maintenant que faites vous" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1130" y="2090" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="153" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-510" y="2160"/>
+                            <mxPoint x="-510" y="335"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="153" value="Vous gagnez le combat mais perdez la guerre" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-850" y="2130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="155" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-1850" y="2160"/>
+                            <mxPoint x="-1850" y="335"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="155" value="Darth Sidious vous élimine tous" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1430" y="2130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=default;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="158" target="161" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1187.783862964527" y="2520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="160" value="Éliminez Sidious" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="159" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2388" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="158" value="Si découvert secret du Chancelier" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1120" y="2340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="161" value="Vous gagnez et sauvé la galaxie" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-1120" y="2490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" value="Genre:science-fiction&lt;br&gt;Inspiration: StarWars Revenge of the Sith&lt;br&gt;Nom: The chosen one&lt;br&gt;Palette&lt;br&gt;&lt;ul&gt;&lt;li&gt;Couleur de fond du site: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de fond du contenu: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;25&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;25&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;25&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de la police: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;255&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de fond des boutons: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de fond des boutons en hover: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;0&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de police des boutons: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(42, 37, 47);&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de police des boutons en hover: rgb&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;&lt;font color=&quot;#b5cea8&quot;&gt;255&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Couleur de drop-shawdow: rgba&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;255&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; color: rgb(181, 206, 168);&quot;&gt;0.5&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="-1850" y="-50" width="430" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="172" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-1850" y="1540" as="sourcePoint"/>
+                        <mxPoint x="-1850" y="1270" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="173" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-1850" y="1000" as="sourcePoint"/>
+                        <mxPoint x="-1850" y="700" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="174" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-510" y="1820" as="sourcePoint"/>
+                        <mxPoint x="-510" y="1550" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="175" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-510" y="1340" as="sourcePoint"/>
+                        <mxPoint x="-510" y="1190" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="176" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-510" y="1020" as="sourcePoint"/>
+                        <mxPoint x="-510" y="830" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="177" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-510" y="520" as="sourcePoint"/>
+                        <mxPoint x="-510" y="420" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="180" style="edgeStyle=none;html=1;entryX=0.5;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="179" target="149">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="Vous combattez le compte Dooku" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1120" y="1910" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
