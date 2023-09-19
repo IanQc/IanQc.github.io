@@ -2,7 +2,7 @@
 <br>
 
 
-![](https://github.com/IanQc/vous-etes-le-heros-the-chosen-one/blob/main/Partie1/corbin_ian_PS1_582-324MO/assets/jeux.jpeg?raw=true)
+![](./assets/jeux.jpeg)
 Développement web - [Projet vous etes le heros](https://smnarnold.com/projets/vous-etes-le-heros)
 **Genre**: Sci-Fi
 <br>
@@ -12,5 +12,5 @@ Développement web - [Projet vous etes le heros](https://smnarnold.com/projets/v
 <br>
 <h2>Diagramme</h2>
 <br>
-![]()
+![](./assets/scénario.png)
 Développement web - [Diagramme](https://github.com/IanQc/vous-etes-le-heros-the-chosen-one/blob/main/Partie1/corbin_ian_PS1_582-324MO/assets/scénario.png)
