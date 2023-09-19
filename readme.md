@@ -1,9 +1,8 @@
 <h1>THE CHOSEN ONE</h1>
 <br>
-
-
 ![](./assets/jeux.jpeg)
 Développement web - [Projet vous etes le heros](https://smnarnold.com/projets/vous-etes-le-heros)
+<br>
 **Genre**: Sci-Fi
 <br>
 **Inspiration**: StarWars Revenge of the Sith
