@@ -13,4 +13,3 @@ Développement web - [Projet vous etes le heros](https://smnarnold.com/projets/v
 <br>
 <img src="./assets/scénario.png">
 
-Développement web - [Diagramme](https://github.com/IanQc/vous-etes-le-heros-the-chosen-one/blob/main/Partie1/corbin_ian_PS1_582-324MO/assets/scénario.png)
