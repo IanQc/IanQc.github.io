@@ -1,9 +1,12 @@
-let chapter = {
+
+let chapters = {
     intro : {
-        titre: "Que la force soit avec toi",
+       
+        titre: "Que la force soit avec toi", 
+        
         description: "Vous, Anakin Skywalker venez tout juste de recevoir un mission d'importance capital, le chancelier c'est fait capturer en orbite. Votre Mission: Infiltrer et extraire le chancelier.",
         image: "",
-        bouton: [{titre: 'Continuer', 'destination': 'debut'}, ] 
+        bouton: [{titre: 'Continuer', 'destination': 'Type goToChapter("debut")'}, ] 
     
     },
 
@@ -13,17 +16,18 @@ let chapter = {
         image: "",
         bouton: [
             {titre: 'Atterir vaisseaux par trou dans la coque du vaisseau', 'destination': ''}, 
-            {titre: 'Foncer dans le Hanguar', 'destination': 'Attérir'} ]
+            {titre: 'Foncer dans le Hanguar', 'destination': 'Type goToChapter("Atterir")'} ]
     },
 
-    Attérir : {
+    Atterir : {
         titre: "Vous attérisez dans le hanguar",
         description: "Vous détruisez tous les droides sur votre chemin. Vous devez maintenant vous dirigez vers le cockpit.",
         image: "",
+        //Choix
         bouton: [
         {titre: 'Aller dans le couloir', 'destination': ''}, 
         {titre: 'Aller dans le bureau de sécurité', 'destination': 'Information'},
-        {titre: "Prendre l'ascenceur", 'destination': 'Ascenceur'}
+        {titre: /*Texte du choix*/"Prendre l'ascenceur", 'destination': /*Destination du choix*/'Type goToChapter("Ascenceur")'}
     ]
     },
     
@@ -33,7 +37,7 @@ let chapter = {
         image: "",
         bouton: [
             {titre: 'Forcez les portes', 'destination': ''}, 
-            {titre: "Passez par dessus l'ascenceur", 'destination': 'Cockpit'},
+            {titre: "Passez par dessus l'ascenceur", 'destination': 'Type goToChapter("Cockpit")'},
         ]
     },
 
@@ -43,7 +47,7 @@ let chapter = {
         image: "",
         bouton: [
             {titre: 'Prendre le couloir', 'destination': ''}, 
-            {titre: "Prendre l'ascenceur", 'destination': 'Ascenceur'}
+            {titre: "Prendre l'ascenceur", 'destination': 'Type goToChapter("Ascenceur")'}
     ]
     },
 
@@ -52,7 +56,7 @@ let chapter = {
         description: "Lorsque vous entrez dans le cockpit vous remarqué que le Chancelier est enchainé sur la chaise du capitaine, il est tenu en otage par Dooku et ses guardes.",
         image: "",
         bouton: [
-            {titre: "Continuer", 'destination': 'Dooku'}
+            {titre: "Continuer", 'destination': 'Type goToChapter("Dooku")'}
         ]
     },
 
@@ -61,7 +65,7 @@ let chapter = {
         description: "Vous et votre Maître Kenobi affrontez dans le Compte Dooku dans un combat intense",
         image: "video 1",
         bouton: [
-            {titre: "Continuer", 'destination': 'Combat'}
+            {titre: "Continuer", 'destination': 'Type goToChapter("Combat")'}
         ]
     },
 
@@ -70,9 +74,9 @@ let chapter = {
         description: "Dooku met Kenobi hors d'état de combattre, vous affrontez Dooku en solo avec rage et férocitez et parvenez a le battre. Maintenant que faites vous",
         image: "",
         bouton: [
-            {titre: 'Exécuter Dooku pour ses crimes', 'destination': ''}, 
-            {titre: "L'arrêter pour ses crimes", 'destination': ''},
-            {titre: "Éliminer Sidious", 'destination': 'Gagner'}
+            {titre: 'Exécuter Dooku pour ses crimes', 'destination': 'Type goToChapter("")'}, 
+            {titre: "L'arrêter pour ses crimes", 'destination': 'Type goToChapter("")'},
+            {titre: "Éliminer Sidious", 'destination': 'Type goToChapter("")'}
         ]
     },
 
@@ -88,7 +92,7 @@ let chapter = {
         description: "",
         image: "",
         bouton: [
-            {titre: "Vous êtes mort", 'destination': 'Intro'}
+            {titre: "Vous êtes mort", 'destination': 'Type goToChapter("Intro")'}
         ]
     },
 
@@ -97,7 +101,7 @@ let chapter = {
         description: "",
         image: "",
         bouton: [
-            {titre: "Vous êtes mort", 'destination': 'Intro'}
+            {titre: "Vous êtes mort", 'destination': 'Type goToChapter("Intro")'}
         ]
     },
     
@@ -106,7 +110,7 @@ let chapter = {
         description: "",
         image: "",
         bouton: [
-            {titre: "Vous êtes mort", 'destination': 'Intro'}
+            {titre: "Vous êtes mort", 'destination': 'Type goToChapter("Intro")'}
         ]
     },
 
@@ -115,7 +119,7 @@ let chapter = {
         description: "",
         image: "",
         bouton: [
-            {titre: "Vous êtes mort", 'destination': 'Intro'}
+            {titre: "Vous êtes mort", 'destination': 'Type goToChapter("Intro")'}
         ]
     },
 
@@ -124,7 +128,7 @@ let chapter = {
         description: "",
         image: "",
         bouton: [
-            {titre: "Vous êtes mort", 'destination': 'Intro'}
+            {titre: "Vous êtes mort", 'destination': 'Type goToChapter("Intro")'}
         ]
     },
 
@@ -133,30 +137,24 @@ let chapter = {
         description: "",
         image: "",
         bouton: [
-            {titre: "Vous êtes mort", 'destination': 'Intro'}
+            {titre: "Vous êtes mort", 'destination': 'Type goToChapter("Intro")'}
         ]
     },
 
 
 }
 
-function goToChapter(){
-    if(chapter){
-        console.log(chapter.titre);
-        console.log(chapter.description);
-        console.log(chapter.bouton[0]);
-        if (chapter.bouton[1]){
-            console.log(chapter.bouton[1])
-        }
-        if (chapter.bouton[2]){
-            console.log(chapter.bouton[2])
-        }
-        if (chapter.bouton[3]){
-            console.log(chapter.bouton[3])
-        }
-    }else{
-        console.log("nope")
-    }
-    
-}
 
+function goToChapter(chapter) {
+    if(chapter){
+        console.log(`${chapters[chapter].titre}`);
+        console.log("options:")
+        for (const i in chapters[chapter].bouton) {
+            console.log(`-> ${chapters[chapter].bouton[i].titre} \n ${chapters[chapter].bouton[i].destination} `)
+        }
+    }else {
+        console.log("Chemin existe pas")
+    };
+};
+
+goToChapter("intro")
