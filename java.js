@@ -87,52 +87,76 @@ let chapter = {
         titre: "",
         description: "",
         image: "",
-        bouton: []
+        bouton: [
+            {titre: "Vous êtes mort", 'destination': 'Intro'}
+        ]
     },
 
     Impact : {
         titre: "",
         description: "",
         image: "",
-        bouton: []
+        bouton: [
+            {titre: "Vous êtes mort", 'destination': 'Intro'}
+        ]
     },
     
     Droide_couloir1 : {
         titre: "",
         description: "",
         image: "",
-        bouton: []
+        bouton: [
+            {titre: "Vous êtes mort", 'destination': 'Intro'}
+        ]
     },
 
     Droide_ascendeur : {
         titre: "",
         description: "",
         image: "",
-        bouton: []
+        bouton: [
+            {titre: "Vous êtes mort", 'destination': 'Intro'}
+        ]
     },
 
     Droide_couloir2 : {
         titre: "",
         description: "",
         image: "",
-        bouton: []
+        bouton: [
+            {titre: "Vous êtes mort", 'destination': 'Intro'}
+        ]
     },
 
     Sidious : {
         titre: "",
         description: "",
         image: "",
-        bouton: []
+        bouton: [
+            {titre: "Vous êtes mort", 'destination': 'Intro'}
+        ]
     },
 
 
 }
 
 function goToChapter(){
-    if(bruh){
-
+    if(chapter){
+        console.log(chapter.titre);
+        console.log(chapter.description);
+        console.log(chapter.bouton[0]);
+        if (chapter.bouton[1]){
+            console.log(chapter.bouton[1])
+        }
+        if (chapter.bouton[2]){
+            console.log(chapter.bouton[2])
+        }
+        if (chapter.bouton[3]){
+            console.log(chapter.bouton[3])
+        }
     }else{
-
+        console.log("nope")
     }
     
 }
+
