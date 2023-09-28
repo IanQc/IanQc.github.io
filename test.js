@@ -1,11 +1,9 @@
 
 let chapters = {
     intro : {
-       
         titre: "Que la force soit avec toi", 
-        
         description: "Vous, Anakin Skywalker venez tout juste de recevoir un mission d'importance capital, le chancelier c'est fait capturer en orbite. Votre Mission: Infiltrer et extraire le chancelier.",
-        image: "",
+        image: "./assets/img_chapter/",
         bouton: [{titre: 'Continuer', 'destination': 'Type goToChapter("debut")'}, ] 
     
     },
@@ -13,7 +11,7 @@ let chapters = {
     debut : {
         titre: "C'est parti",
         description: "Vous et Obi-Wan Kenobi prenez chacun un vaisseau afin d'infiltrer le vaisseau en orbite.",
-        image: "",
+        image: "./assets/img_chapter/debut.webp",
         bouton: [
             {titre: 'Atterrir vaisseaux par trou dans la coque du vaisseau', 'destination': 'Type goToChapter("trou")'}, 
             {titre: 'Foncer dans le Hanguar', 'destination': 'Type goToChapter("atterir")'} ]
@@ -22,7 +20,7 @@ let chapters = {
     atterir : {
         titre: "Vous atterrissez dans le hangar",
         description: "Vous détruisez tous les droïdes sur votre chemin. Vous devez maintenant vous dirigez vers le cockpit.",
-        image: "",
+        image: "./assets/img_chapter/attérissage.webp",
         bouton: [
         {titre: 'Aller dans le couloir', 'destination': 'couloir'}, 
         {titre: 'Aller dans le bureau de sécurité', 'destination': 'Type goToChapter("bureau")'},
@@ -33,7 +31,7 @@ let chapters = {
     ascenseur : {
         titre: "Vous attendez tranquillement dans l'ascenseur",
         description: "À mi-chemin l'ascenseur bloque et vous êtes coincé",
-        image: "",
+        image: "./assets/img_chapter/ascenceur.jpg",
         bouton: [
             {titre: 'Forcez les portes', 'destination': 'Type goToChapter("forcez")'}, 
             {titre: "Passez par-dessus l'ascenseur", 'destination': 'Type goToChapter("cockpit")'},
