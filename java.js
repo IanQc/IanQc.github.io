@@ -3,7 +3,7 @@ let chapters = {
     intro : {
         titre: "Que la force soit avec toi", 
         description: "Vous, Anakin Skywalker venez tout juste de recevoir un mission d'importance capital, le chancelier c'est fait capturer en orbite. Votre Mission: Infiltrer et extraire le chancelier.",
-        image: "./assets/img_chapter/",
+        image: "./assets/jeux.jpeg",
         bouton: [{titre: 'Continuer', 'destination': 'Type goToChapter("debut")'}, ] 
     
     },
@@ -41,7 +41,7 @@ let chapters = {
     bureau : {
         titre: "Vous trouvez l'information!",
         description: "Vous regardez les caméras du cockpit et découvrez que le chancelier est un traitre et que sa vraie identité est Darth Sidious ",
-        image: "",
+        image: "./assets/img_chapter/information.jpg",
         bouton: [
             {titre: 'Prendre le couloir', 'destination': 'Type goToChapter("couloir")'}, 
             {titre: "Prendre l'ascenseur", 'destination': 'Type goToChapter("ascenceur")'}
@@ -51,7 +51,7 @@ let chapters = {
     cockpit : {
         titre: "Vous entrez dans le cockpit du vaisseau",
         description: "Lorsque vous entrez dans le cockpit vous remarquer que le Chancelier est enchainé sur la chaise du capitaine, il est tenu en otage par Dooku et ses gardes.",
-        image: "",
+        image: "./assets/img_chapter/cockpit.jpeg",
         bouton: [
             {titre: "Continuer", 'destination': 'Type goToChapter("dooku")'}
         ]
@@ -69,7 +69,7 @@ let chapters = {
     combat : {
         titre: "C'est le temps d'en finir",
         description: "Dooku met Kenobi hors d'état de combattre, vous affrontez Dooku en solo avec rage et férocité et parvenez a le battre. Maintenant que faites-vous",
-        image: "",
+        image: "Video2",
         bouton: [
             {titre: 'Exécuter Dooku pour ses crimes', 'destination': 'Type goToChapter("justice")'}, 
             {titre: "L'arrêter pour ses crimes", 'destination': 'Type goToChapter("arrestation")'},
@@ -80,7 +80,7 @@ let chapters = {
     justice : {
         titre: "Vous exécutez le compte Dooku et mettez fin a la guerre",
         description: "Lors de votre arrivé au temple, vous êtes accueillis en héros, jusqu'à ce que l'ordre 66 soit ordonné par le Chancelier Palpatine/Darth Sidious. Tous les Jedis de la Galaxie meurent, incluant vous.",
-        image: "",
+        image: "./assets/img_chapter/order66.jpg ./assets/img_chapter/justice.jpg", 
         bouton: [
             {titre: "Recommencez", 'destination': 'Type goToChapter("intro")'}
         ]
@@ -89,7 +89,7 @@ let chapters = {
    traitre : {
         titre: "The Chosen One",
         description: "Grâce à l'information trouvée plus tôt, vous décidez d'en finir une fois pour toutes et d'exterminer les siths de la Galaxie. Vous vous retournez et exécuter le chancelier encore menotté à son siège, puis vous rendez la pareille a Dooku pour ses crimes commis contre la galaxie.",
-        image: "",
+        image: "./assets/img_chapter/trahison.webp",
         bouton: [
             {titre: "Vous Gagnez", 'destination': 'Type goToChapter("outro")'}
         ]
@@ -98,15 +98,15 @@ let chapters = {
     outro : {
         titre: "The Chosen One",
         description: "Maintenant que les Siths et leurs plans ont été définitivement exterminés de la galaxie, la République peut afin renaître a son plein potentiel. Pour votre courage et service rendu a la galaxie, vous êtes attribué le rang de Maître Jedi ainsi que d'une reconnaissance éternelle à travers tous les systèmes occupés.",
-        image: "",
-        bouton: []
+        image: "./assets/img_chapter/outro.png",
+        bouton: [{titre: "Recommencez", 'destination': 'Type goToChapter("intro")'}]
     },
 
     //Mort
     trou : {
         titre: "Vous mourrez",
         description: "Vous vous écrasez dans le vaisseau et mourrez par l'impact",
-        image: "",
+        image: "./assets/img_chapter/impact.png",
         bouton: [
             {titre: "Recommencez", 'destination': 'Type goToChapter("intro")'}
         ]
@@ -115,7 +115,7 @@ let chapters = {
     couloir: {
         titre: "Vous mourrez",
         description: "Des droïdes vous prennent en embuscade, ils sont trop nombreux  pour vous.",
-        image: "",
+        image: "./assets/img_chapter/coridor.webp",
         bouton: [
             {titre: "Recommencez", 'destination': 'Type goToChapter("intro")'}
         ]
@@ -123,8 +123,8 @@ let chapters = {
     //Mort
     forcez : {
         titre: "Vous mourrez",
-        description: "Dès que vous entrouvrez les portes, un escadron de droïde vous brule vivant avec des lance-flammes",
-        image: "",
+        description: "Dès que vous entrouvrez les portes, un duo de Droideka vous pulvérise.",
+        image: "./assets/img_chapter/forcez.png",
         bouton: [
             {titre: "Recommencez", 'destination': 'Type goToChapter("intro")'}
         ]
@@ -133,7 +133,7 @@ let chapters = {
     arrestation : {
         titre: "Trahison",
         description: "Lors de l'arrestation, Dooku vous dévoile que le chancelier est Darth Sidious, mais il est trop tard. Le chancelier en question vous prend par surprise et extermine toutes les personnes présentes dans la pièce",
-        image: "",
+        image: "./assets/img_chapter/sidious.jpg",
         bouton: [
             {titre: "Recommencez", 'destination': 'Type goToChapter("intro")'}
         ]
