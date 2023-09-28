@@ -1,6 +1,6 @@
 
 let chapters = {
-    intro : {
+    Intro : {
        
         titre: "Que la force soit avec toi", 
         
@@ -88,14 +88,14 @@ let chapters = {
         ]
     },
     //Victoire
-    Traitre : {
+    /*Traitre : {
         titre: "The Chosen One",
         description: "Grace a l'information trouvée plus tôt vous décidez d'en finir une fois pour toute et d'exterminer les siths de la Galaxie. Vous vous retournez et exécuter le chancelier encore monoté à son siège, puis vous rendez la pareil a Dooku pour ses crimes comis contre la galaxie.",
         image: "",
         bouton: [
             {titre: "Vous Gagnez", 'destination': 'Type goToChapter("Outro")'}
         ]
-    },
+    },*/
     //Outro
     Outro : {
         titre: "The Chosen One",
@@ -143,19 +143,38 @@ let chapters = {
 
 
 }
-
+/*if (chapters === "Information") {
+    chapters.Traitre = {
+        titre: "The Chosen One",
+        description: "Grace a l'information trouvée plus tôt vous décidez d'en finir une fois pour toute et d'exterminer les siths de la Galaxie. Vous vous retournez et exécuter le chancelier encore monoté à son siège, puis vous rendez la pareil a Dooku pour ses crimes comis contre la galaxie.",
+        image: "",
+        bouton: [
+            {titre: "Vous Gagnez", 'destination': 'Type goToChapter("Outro")'}
+        ]
+    };
+}*/
+//delete chapters.Traitre;
 
 function goToChapter(chapter) {
     if(chapter){
+       
         console.log(`${chapters[chapter].titre}`);
         console.log(`${chapters[chapter].description}`);
         console.log("options:")
         for (const i in chapters[chapter].bouton) {
+            /*let InformationVisiter = false;
+            if (chapter === "Information") {
+                InformationVisiter = true;
+            }
+            if (InformationVisiter = false) {
+                delete chapters.Traitre;
+            }*/ 
             console.log(`--> ${chapters[chapter].bouton[i].titre} \n ${chapters[chapter].bouton[i].destination} `)
         }
+
     }else {
         console.log("Chemin existe pas")
     };
 };
 
-goToChapter("intro")
+goToChapter("Intro")
