@@ -24,11 +24,11 @@ let chapters = {
         bouton: [
         {titre: 'Aller dans le couloir', 'destination': 'couloir'}, 
         {titre: 'Aller dans le bureau de sécurité', 'destination': 'Type goToChapter("bureau")'},
-        {titre: "Prendre l'ascenseur", 'destination': 'Type goToChapter("ascenseur")'}
+        {titre: "Prendre l'ascenseur", 'destination': 'Type goToChapter("ascenceur")'}
     ]
     },
     
-    ascenseur : {
+    ascenceur : {
         titre: "Vous attendez tranquillement dans l'ascenseur",
         description: "À mi-chemin l'ascenseur bloque et vous êtes coincé",
         image: "./assets/img_chapter/ascenceur.jpg",
