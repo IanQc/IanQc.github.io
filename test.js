@@ -91,7 +91,7 @@ let chapters = {
 		titre: "Dooku vous engage en combat",
 		description:
 			"Vous et votre Maître Obi-Wan Kenobi affrontez le Compte Dooku dans un combat intense",
-		image: "video 1",
+		image: "./assets/video/combat1.mov",
 		bouton: [{ titre: "Continuer", destination: 'Type goToChapter("combat")' }],
 	},
 	//Chapitre8
@@ -99,7 +99,7 @@ let chapters = {
 		titre: "C'est le temps d'en finir",
 		description:
 			"Dooku met Kenobi hors d'état de combattre, vous l'affrontez alors en solo avec rage et férocité et parvenez à le vaincre. Maintenant que faites-vous?",
-		image: "Video2",
+		image: "./assets/video/combat2.mov",
 		bouton: [
 			{
 				titre: "Exécuter Dooku pour ses crimes",
