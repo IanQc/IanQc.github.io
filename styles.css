@@ -15,7 +15,7 @@ body{
 }
 
 #jeu {
-    width: 800px;
+    width: 900px;
     background-color: rgb(25, 25, 25);
     opacity: 75%;
     text-align: center;
@@ -24,15 +24,15 @@ body{
     min-height: 100px;
     height: 100%;
     padding:  0 2% 1% 2%;
-    filter: drop-shadow( 0 0 100px rgba(255, 0, 0, 0.5));
+    filter: drop-shadow( 0 0 300px rgba(255, 0, 0, 0.5));
     color: red;
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-#button {
+.boutons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,9 +40,10 @@ body{
 }
 
 button {
+    
     color: rgb(255, 255, 255);
     border: none;
-    background-color: blue;
+    background-color: red;
     transition: background-color 0.3s;
     border-radius: 10px;
     width: 8vmin;
@@ -50,11 +51,11 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    background-color: blue;
     transition-delay: 0.01s;
 }
 
-h1 {
+#titre1 {
     font-family: "StarWars";
     font-size: 60px;
     margin: 0;
@@ -62,4 +63,9 @@ h1 {
 
 h2 {
     margin: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
 }
