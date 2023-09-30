@@ -225,21 +225,14 @@ let chapters = {
 		],
 	},
 };
-
 let information = false;
-
-
 function goToChapter(chapitre) {
 	if (chapters[chapitre]) {
-		//titres.innerText = chapters[chapitre].titre
 		document.querySelector("#titre").innerText = chapters[chapitre].titre;
 		document.querySelector("p").innerText = chapters[chapitre].description;
 		document.querySelector("img").src = chapters[chapitre].image;
 		document.querySelector("video").src = chapters[chapitre].video;
 
-		console.log(chapters[chapitre].titre);
-		console.log(chapters[chapitre].description);
-		console.log("Options:");
 		if (chapters[chapitre].image) {
             document.querySelector("img").style.display = "block";
             document.querySelector("img").src = chapters[chapitre].image;
@@ -253,7 +246,6 @@ function goToChapter(chapitre) {
             document.querySelector("video").style.display = "none";
         }
             
-
 		if (chapitre === "bureau") {
 			information = true;
 		}
@@ -287,7 +279,6 @@ function goToChapter(chapitre) {
 				],
 			};
 		}
-		
 		const boutons = document.querySelector('.boutons'); 
 		while (boutons.firstChild) { 
   		boutons.removeChild(boutons.firstChild); 
@@ -296,26 +287,14 @@ function goToChapter(chapitre) {
 			const nouveauBtn = document.createElement('button'); 
 			nouveauBtn.textContent = chapters[chapitre].boutons[i].titre; 
 			nouveauBtn.addEventListener('click', chapters[chapitre].boutons[i].destination);
-
-			/*nouveauBtn.addEventListener('click', () => { 
-			  goToChapter(chapters[chapitre].boutons[i].destination) 
-			}); */
 			boutons.appendChild(nouveauBtn); 
-		  
 		  }; 
-		/*for (const i in chapters[chapitre].bouton) {
-			console.log(
-				`-->> ${chapters[chapitre].bouton[i].titre} \n ${chapters[chapitre].bouton[i].destination} `
-			);
-		}*/
-	} else {
-		console.log(`Bruh apprend à écrire`);
 	}
 }
 
 goToChapter("intro");
 
-// Sélectionne le div .boutons 
+
 
 
   
