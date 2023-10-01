@@ -1,8 +1,6 @@
-//Copie de la final sauf que celle-ci utilise Prettier
-//Cette page me servait de test pour mes gros code compliquer surtout pour la twist.
 const musique = document.createElement('audio');
 
-
+//Chapitre
 let chapters = {
 	//Introduction
 	intro: {
@@ -230,26 +228,31 @@ let chapters = {
 		],
 	},
 };
+
 let information = false;
 function goToChapter(chapitre) {
 	if (chapters[chapitre]) {
+		//Changement de texte
 		document.querySelector("#titre").innerText = chapters[chapitre].titre;
 		document.querySelector("p").innerText = chapters[chapitre].description;
-		document.querySelector("img").src = chapters[chapitre].image;
-		document.querySelector("video").src = chapters[chapitre].video;
-
+		//Changement d'image
 		if (chapters[chapitre].image) {
             document.querySelector("img").style.display = "block";
             document.querySelector("img").src = chapters[chapitre].image;
         } else {
             document.querySelector("img").style.display = "none";
         }
+		//Changement de vidéo
 		if (chapters[chapitre].video) {
             document.querySelector("video").style.display = "block";
             document.querySelector("video").src = chapters[chapitre].video;
+			document.querySelector("video").play();
         } else {
             document.querySelector("video").style.display = "none";
+			document.querySelector("video").pause();
+			document.querySelector("video").currentTime = 0;
         }
+		//Changement d'audio
         if(chapters[chapitre].audio){
 			musique.src = chapters[chapitre].audio;
 			musique.play();
@@ -257,10 +260,10 @@ function goToChapter(chapitre) {
 			musique.pause();
 			musique.currentTime = 0;
 		}
+		//Twist
 		if (chapitre === "bureau") {
 			information = true;
 		}
-
 		if (information == true) {
 			chapters.combat = chapters.combatre;
 			chapters.combatre = {
@@ -290,7 +293,7 @@ function goToChapter(chapitre) {
 				],
 			};
 		}
-		
+		//Changement boutons
 		const boutons = document.querySelector('.boutons'); 
 		while (boutons.firstChild) { 
   		boutons.removeChild(boutons.firstChild); 
