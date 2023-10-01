@@ -1,5 +1,6 @@
 //Copie de la final sauf que celle-ci utilise Prettier
 //Cette page me servait de test pour mes gros code compliquer surtout pour la twist.
+const musique = document.createElement('audio');
 
 
 let chapters = {
@@ -7,7 +8,7 @@ let chapters = {
 	intro: {
 		titre: "Que la force soit avec toi",
 		description:
-			"Vous, Anakin Skywalker venez tout juste de recevoir une mission d'importance capital, le chancelier c'est fait capturer en orbite de Coruscant. Votre Mission: Infiltrer et extraire le chancelier de la République Galactique.",
+			"Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
 		image: "./assets/jeux.jpeg",
 		boutons: [{ titre: "Continuer", destination: function() {
             goToChapter("debut");
@@ -21,7 +22,7 @@ let chapters = {
 		image: "./assets/images/debut.webp",
 		boutons: [
 			{
-				titre: "Atterrir par un trou dans la coque du vaisseau",
+				titre: "Atterrir par un trou dans la coque",
 				destination: function() {
 					goToChapter("trou");
 				},
@@ -38,7 +39,7 @@ let chapters = {
 	atterir: {
 		titre: "Vous atterrissez dans le hangar",
 		description:
-			"Vous détruisez tous les droïdes sur votre chemin. Vous devez maintenant vous dirigez vers le cockpit.",
+			"Vous déchaînez votre pouvoir, anéantissant chaque droïde qui ose se mettre en travers de votre chemin. Votre détermination est palpable alors que vous continuez d'avancer, laissant derrière vous un sillage de débris mécaniques fumants. Maintenant, il vous faut vous frayer un chemin jusqu'au cockpit, là où se joue le destin de cette mission. Chaque pas que vous faites résonne dans les coursives métalliques du vaisseau ennemi, rappelant à tous que vous êtes la tempête qui s'abat sur eux.",
 		image: "./assets/images/attérissage.webp",
 		boutons: [
 			{
@@ -63,7 +64,7 @@ let chapters = {
 	},
 	//Chapitre4
 	ascenceur: {
-		titre: "Vous attendez tranquillement dans l'ascenseur",
+		titre: "Attente sereine dans l'ascenseur",
 		description: "À mi-chemin l'ascenseur bloque et vous êtes coincé",
 		image: "./assets/images/ascenceur.jpg",
 		boutons: [
@@ -82,8 +83,9 @@ let chapters = {
 	bureau: {
 		titre: "Vous trouvez l'information!",
 		description:
-			"Vous regardez les caméras du cockpit et découvrez que le chancelier Palpatine est un traître et que sa vraie identité est Darth Sidious ",
+			"Vos yeux scrutent intensément les écrans du cockpit, révélant l'impensable : le Chancelier Palpatine, en qui vous aviez placé une confiance aveugle, se révèle être un traître de la pire espèce. Son visage bienveillant dissimulait l'ombre d'une sinistre vérité : sa véritable identité est celle de Darth Sidious, le maître des Siths, orchestrant depuis l'ombre le chaos qui menace la galaxie.",
 		image: "./assets/images/information.jpg",
+		audio:"./assets/audio/musique_bad_palp.mp4",
 		boutons: [
 			{
 				titre: "Prendre le couloir",
@@ -103,7 +105,7 @@ let chapters = {
 	fosse: {
 		titre: "Vous entrez dans le cockpit du vaisseau",
 		description:
-			"Lorsque vous y entrez, vous remarquer que le Chancelier est menotté sur la chaise du capitaine, il est tenu en otage par Dooku et ses gardes.",
+			"Lorsque vous pénétrez dans la salle, une scène des plus saisissantes s'offre à vos yeux. Le Chancelier Suprême est là, menotté, retenu de force sur la chaise du capitaine. Ses yeux portent la lueur de la détresse, emprisonnés par les chaînes de son ravisseur impitoyable, Dooku, qui se tient là, intransigeant, entouré de ses gardes, tels des ombres menaçantes.",
 		image: "./assets/images/cockpit.jpeg",
 		boutons: [{ titre: "Continuer", destination: function() {
             goToChapter("dooku");
@@ -113,7 +115,7 @@ let chapters = {
 	dooku: {
 		titre: "Dooku vous engage en combat",
 		description:
-			"Vous et votre Maître Obi-Wan Kenobi affrontez le Compte Dooku dans un combat intense",
+			"Vous et votre vénérable Maître Obi-Wan Kenobi êtes lancés dans un duel d'une intensité rare contre le redoutable Comte Dooku. L'air est électrifié par les éclairs de sabres laser qui s'entrechoquent, créant une danse mortelle de lumières écarlates et bleues.",
 		video: "./assets/video/combat1.mov",
 		boutons: [{ titre: "Continuer", destination: function() {
             goToChapter("combat");
@@ -123,7 +125,7 @@ let chapters = {
 	combat: {
 		titre: "C'est le temps d'en finir",
 		description:
-			"Dooku met Kenobi hors d'état de combattre, vous l'affrontez alors en solo avec rage et férocité et parvenez à le vaincre. Maintenant que faites-vous?",
+			"Dans un instant de pure puissance, Dooku met Maître Kenobi hors d'état de combattre, le projetant au sol dans une torsion spectaculaire. La salle résonne du fracas de métal, annonçant une pause fatale dans le duel. La rage vous envahit, colère pure qui alimente chaque mouvement, chaque coup de sabre laser. Finalement, avec une habileté foudroyante, vous parvenez à prendre l'avantage. Dooku, dépassé par la furie qui brûle en vous, est contraint de s'incliner devant votre force implacable. Maintenant, la tâche qui se dresse devant vous est cruciale. Vous devez décider du sort de Dooku...",
 		video: "./assets/video/combat2.mov",
 		boutons: [
 			{
@@ -144,8 +146,9 @@ let chapters = {
 	justice: {
 		titre: "Vous exécutez le compte Dooku et mettez fin à la guerre",
 		description:
-			"Lors de votre arrivé au temple, vous êtes accueillis en héros, jusqu'à ce que l'ordre 66 soit ordonné par le Chancelier Palpatine/Darth Sidious. Tous les Jedis de la Galaxie meurent, incluant vous.",
+			"Vous êtes acclamé comme un héros en arrivant au temple Jedi. Cependant, l'Ordre 66 est donné par le Chancelier Palpatine/Darth Sidious, causant la mort de tous les Jedi, incluant vous.",
 		image: "./assets/images/order66.jpg",
+		audio:"./assets/audio/musique_bad_dooku.mp4",
 		boutons: [
 			{ titre: "Recommencez", destination: function() {
 				goToChapter("intro");
@@ -156,7 +159,7 @@ let chapters = {
 	traitre: {
 		titre: "The Chosen One",
 		description:
-			"Grâce à l'information trouvée plus tôt, vous décidez d'en finir une fois pour toutes et d'exterminer les siths de la Galaxie. Vous vous retournez et exécuter le chancelier encore menotté à son siège, puis vous rendez la pareille a Dooku pour ses crimes commis contre la galaxie.",
+			"Porté par la révélation, une détermination inflexible vous envahit. Il est temps de clore l'oppression des Siths qui saigne la galaxie. Vous faites faites volte-face et d'un geste résolu vous exécutez le Chancelier encore enchaîné à son siège. Un silence lourd et horrifiant pèse dans la salle. Dooku, sous le choc de sa défaite et de la mort de son Maître demeure figé sur place, son regard empreint d'une terreur glaciale. Sans hésiter, vous exécutez la sentence, mettant fin pour de bon à sa menace. La galaxie respire enfin, délivrée de l'ombre qui l'accablait depuis trop longtemps.",
 		image: "./assets/images/trashison.webp",
 		boutons: [
 			{ titre: "Vous Gagnez", destination: function() {
@@ -168,8 +171,9 @@ let chapters = {
 	outro: {
 		titre: "A new hope",
 		description:
-			"Maintenant que les Siths et leurs plans ont été définitivement décimer de la galaxie, la République peut afin renaître à son plein potentiel. Pour votre courage et service rendu a la galaxie, vous êtes attribué le rang de Maître Jedi ainsi que d'une reconnaissance éternelle à travers tous les systèmes occupés.",
+			"Maintenant que les Siths et leurs sinistres desseins ont été irrémédiablement éradiqués de la galaxie, la République peut enfin renaître et s'épanouir pleinement. Pour votre courage et les services inestimables rendus à la galaxie, vous êtes élevé au rang honorifique de Maître Jedi, et votre dévouement sera gravé dans la mémoire collective de tous les systèmes occupés, pour l'éternité.",
 		image: "./assets/images/outro.png",
+		audio:"./assets/audio/musique_final.mp3",
 		boutons: [
 			{ titre: "Recommencez", destination: function() {
 				goToChapter("intro");
@@ -180,7 +184,7 @@ let chapters = {
 	//Mort
 	trou: {
 		titre: "Vous mourrez",
-		description: "Vous vous écrasez dans le vaisseau et mourrez par l'impact",
+		description: "Vous subissez un violent choc en percutant le vaisseau, la force de l'impact vous emportant dans la mort.",
 		image: "./assets/images/impact.png",
 		boutons: [
 			{ titre: "Recommencez", destination: function() {
@@ -192,7 +196,7 @@ let chapters = {
 	couloir: {
 		titre: "Vous mourrez",
 		description:
-			"Des droïdes vous prennent en embuscade, ils sont trop nombreux  pour vous.",
+			"Vous tombez dans une embuscade tendue par une multitude de droïdes, leur nombre écrasant vous submerge rapidement.",
 		image: "./assets/images/coridor.webp",
 		boutons: [
 			{ titre: "Recommencez", destination: function() {
@@ -204,7 +208,7 @@ let chapters = {
 	forcez: {
 		titre: "Vous mourrez",
 		description:
-			"Dès que vous entrouvrez les portes, un duo de Droideka vous pulvérise.",
+			"À peine les portes s'entrouvrent, qu'un duo de Droideka vous pulvérise instantanément.",
 		image: "./assets/images/forcez.png",
 		boutons: [
 			{ titre: "Recommencez", destination: function() {
@@ -216,8 +220,9 @@ let chapters = {
 	arrestation: {
 		titre: "Trahison",
 		description:
-			"Lors de l'arrestation, Dooku vous dévoile que le chancelier est Darth Sidious, mais il est trop tard. Le chancelier en question vous prend par surprise et extermine toutes les personnes présentes dans la pièce",
+			"Lors de votre tentative d'arrestation, Dooku révèle que le chancelier est en réalité Darth Sidious, mais l'information arrive trop tard. Le chancelier, dans un geste soudain, vous prend au dépourvu et décime impitoyablement tous ceux présents dans la pièce.",
 		image: "./assets/images/sidious.jpg",
+		audio:"./assets/audio/musique_bad_palp.mp4",
 		boutons: [
 			{ titre: "Recommencez", destination: function() {
 				goToChapter("intro");
@@ -245,7 +250,13 @@ function goToChapter(chapitre) {
         } else {
             document.querySelector("video").style.display = "none";
         }
-            
+        if(chapters[chapitre].audio){
+			musique.src = chapters[chapitre].audio;
+			musique.play();
+		}else{
+			musique.pause();
+			musique.currentTime = 0;
+		}
 		if (chapitre === "bureau") {
 			information = true;
 		}
@@ -255,7 +266,7 @@ function goToChapter(chapitre) {
 			chapters.combatre = {
 				titre: "C'est le temps d'en finir",
 				description:
-					"Dooku met Kenobi hors d'état de combattre, vous affrontez Dooku en solo avec rage et férocité et parvenez a le battre. Maintenant que faites-vous",
+					"Dans un instant de pure puissance, Dooku met Maître Kenobi hors d'état de combattre, le projetant au sol dans une torsion spectaculaire. La salle résonne du fracas de métal, annonçant une pause fatale dans le duel. La rage vous envahit, colère pure qui alimente chaque mouvement, chaque coup de sabre laser. Finalement, avec une habileté foudroyante, vous parvenez à prendre l'avantage. Dooku, dépassé par la furie qui brûle en vous, est contraint de s'incliner devant votre force implacable. Maintenant, la tâche qui se dresse devant vous est cruciale. Vous devez décider du sort de Dooku...",
 				video: "./assets/video/combat2.mov",
 				boutons: [
 					{
@@ -279,6 +290,7 @@ function goToChapter(chapitre) {
 				],
 			};
 		}
+		
 		const boutons = document.querySelector('.boutons'); 
 		while (boutons.firstChild) { 
   		boutons.removeChild(boutons.firstChild); 
@@ -289,6 +301,7 @@ function goToChapter(chapitre) {
 			nouveauBtn.addEventListener('click', chapters[chapitre].boutons[i].destination);
 			boutons.appendChild(nouveauBtn); 
 		  }; 
+		  
 	}
 }
 
