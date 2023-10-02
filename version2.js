@@ -6,8 +6,9 @@ let chapters = {
 		description:
 			"Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
 		image: "./assets/jeux.jpeg",
-		boutons: [{ titre: "Continuer", destination: "debut"
-        }],
+		boutons: [{ titre: "Continuer", destination: function() {
+            goToChapter("debut");
+        },}],
 	},
 	//Chapitre2
 	debut: {
@@ -18,11 +19,15 @@ let chapters = {
 		boutons: [
 			{
 				titre: "Atterrir par un trou dans la coque",
-				destination: "trou"
+				destination: function() {
+					goToChapter("trou");
+				},
 			},
 			{
 				titre: "Foncer dans le Hanguar",
-				destination: "atterir"
+				destination: function() {
+					goToChapter("atterir");
+				},
 			},
 		],
 	},
@@ -35,15 +40,21 @@ let chapters = {
 		boutons: [
 			{
 				titre: "Aller dans le couloir",
-				destination: "couloir"
+				destination: function() {
+					goToChapter("couloir");
+				},
 			},
 			{
 				titre: "Aller dans le bureau de sécurité",
-				destination: "bureau"
+				destination: function() {
+					goToChapter("bureau");
+				},
 			},
 			{
 				titre: "Prendre l'ascenseur",
-				destination: "ascenceur"
+				destination: function() {
+					goToChapter("ascenceur");
+				},
 			},
 		],
 	},
@@ -53,10 +64,14 @@ let chapters = {
 		description: "À mi-chemin l'ascenseur bloque et vous êtes coincé",
 		image: "./assets/images/ascenceur.jpg",
 		boutons: [
-			{ titre: "Forcez les portes", destination: "forcez" },
+			{ titre: "Forcez les portes", destination: function() {
+				goToChapter("forcez");
+			} },
 			{
 				titre: "Passez par-dessus l'ascenseur",
-				destination: "fosse"
+				destination: function() {
+					goToChapter("fosse");
+				},
 			},
 		],
 	},
@@ -70,11 +85,15 @@ let chapters = {
 		boutons: [
 			{
 				titre: "Prendre le couloir",
-				destination: "couloir"
+				destination: function() {
+					goToChapter("couloir");
+				},
 			},
 			{
 				titre: "Prendre l'ascenseur",
-				destination: "ascenceur"
+				destination: function() {
+					goToChapter("ascenceur");
+				},
 			},
 		],
 	},
@@ -84,7 +103,9 @@ let chapters = {
 		description:
 			"Lorsque vous pénétrez dans la salle, une scène des plus saisissantes s'offre à vos yeux. Le Chancelier Suprême est là, menotté, retenu de force sur la chaise du capitaine. Ses yeux portent la lueur de la détresse, emprisonnés par les chaînes de son ravisseur impitoyable, Dooku, qui se tient là, intransigeant, entouré de ses gardes, tels des ombres menaçantes.",
 		image: "./assets/images/cockpit.jpeg",
-		boutons: [{ titre: "Continuer", destination: "dooku" }],
+		boutons: [{ titre: "Continuer", destination: function() {
+            goToChapter("dooku");
+        } }],
 	},
 	//Chapitre7
 	dooku: {
@@ -92,7 +113,9 @@ let chapters = {
 		description:
 			"Vous et votre vénérable Maître Obi-Wan Kenobi êtes lancés dans un duel d'une intensité rare contre le redoutable Comte Dooku. L'air est électrifié par les éclairs de sabres laser qui s'entrechoquent, créant une danse mortelle de lumières écarlates et bleues.",
 		video: "./assets/video/combat1.mov",
-		boutons: [{ titre: "Continuer", destination: "combat" }],
+		boutons: [{ titre: "Continuer", destination: function() {
+            goToChapter("combat");
+        } }],
 	},
 	//Chapitre8
 	combat: {
@@ -103,11 +126,15 @@ let chapters = {
 		boutons: [
 			{
 				titre: "Exécuter Dooku pour ses crimes",
-				destination: "justice"
+				destination: function() {
+					goToChapter("justice");
+				},
 			},
 			{
 				titre: "L'arrêter pour ses crimes",
-				destination: "arrestation"
+				destination: function() {
+					goToChapter("arrestation");
+				},
 			},
 		],
 	},
@@ -119,7 +146,9 @@ let chapters = {
 		image: "./assets/images/order66.jpg",
 		audio:"./assets/audio/musique_bad_dooku.mp4",
 		boutons: [
-			{ titre: "Recommencez", destination: "intro"},
+			{ titre: "Recommencez", destination: function() {
+				goToChapter("intro");
+			}},
 		],
 	},
 	//Victoire
@@ -129,7 +158,9 @@ let chapters = {
 			"Porté par la révélation, une détermination inflexible vous envahit. Il est temps de clore l'oppression des Siths qui saigne la galaxie. Vous faites faites volte-face et d'un geste résolu vous exécutez le Chancelier encore enchaîné à son siège. Un silence lourd et horrifiant pèse dans la salle. Dooku, sous le choc de sa défaite et de la mort de son Maître demeure figé sur place, son regard empreint d'une terreur glaciale. Sans hésiter, vous exécutez la sentence, mettant fin pour de bon à sa menace. La galaxie respire enfin, délivrée de l'ombre qui l'accablait depuis trop longtemps.",
 		image: "./assets/images/trashison.webp",
 		boutons: [
-			{ titre: "Vous Gagnez", destination: "outro"},
+			{ titre: "Vous Gagnez", destination: function() {
+				goToChapter("outro");
+			} },
 		],
 	},
 	//Outro
@@ -140,7 +171,9 @@ let chapters = {
 		image: "./assets/images/outro.png",
 		audio:"./assets/audio/musique_final.mp3",
 		boutons: [
-			{ titre: "Recommencez", destination: "intro"},
+			{ titre: "Recommencez", destination: function() {
+				goToChapter("intro");
+			}},
 		],
 	},
 
@@ -150,7 +183,9 @@ let chapters = {
 		description: "Vous subissez un violent choc en percutant le vaisseau, la force de l'impact vous emportant dans la mort.",
 		image: "./assets/images/impact.png",
 		boutons: [
-			{ titre: "Recommencez", destination: "intro" },
+			{ titre: "Recommencez", destination: function() {
+				goToChapter("intro");
+			} },
 		],
 	},
 	//Mort
@@ -160,7 +195,9 @@ let chapters = {
 			"Vous tombez dans une embuscade tendue par une multitude de droïdes, leur nombre écrasant vous submerge rapidement.",
 		image: "./assets/images/coridor.webp",
 		boutons: [
-			{ titre: "Recommencez", destination: "intro"},
+			{ titre: "Recommencez", destination: function() {
+				goToChapter("intro");
+			} },
 		],
 	},
 	//Mort
@@ -170,7 +207,9 @@ let chapters = {
 			"À peine les portes s'entrouvrent, qu'un duo de Droideka vous pulvérise instantanément.",
 		image: "./assets/images/forcez.png",
 		boutons: [
-			{ titre: "Recommencez", destination: "intro"},
+			{ titre: "Recommencez", destination: function() {
+				goToChapter("intro");
+			} },
 		],
 	},
 	//Mort
@@ -181,7 +220,9 @@ let chapters = {
 		image: "./assets/images/sidious.jpg",
 		audio:"./assets/audio/musique_bad_palp.mp4",
 		boutons: [
-			{ titre: "Recommencez", destination: "intro"},
+			{ titre: "Recommencez", destination: function() {
+				goToChapter("intro");
+			} },
 		],
 	},
 };
@@ -239,30 +280,37 @@ function goToChapter(chapitre) {
 				boutons: [
 					{
 						titre: "Exécuter Dooku pour ses crimes",
-						destination: "justice"
+						destination: function() {
+							goToChapter("justice");
+						},
 					},
 					{
 						titre: "L'arrêter pour ses crimes",
-						destination: "arrestation"
+						destination: function() {
+							goToChapter("arrestation");
+						},
 					},
 					{
 						titre: "Éliminez Sidious",
-						destination: "traitre"
+						destination: function() {
+							goToChapter("traitre");
+						},
 					},
 				],
 			};
 		}
 		//Changement boutons
-		const boutons = change_bouton; 
+		const boutons = document.querySelector('.boutons'); 
 		while (boutons.firstChild) { 
   		boutons.removeChild(boutons.firstChild); 
 		} 
-		for (const i in chapters[chapitre].boutons) { 
+		for (let i = 0; i < chapters[chapitre].boutons.length; i++) { 
 			const nouveauBtn = document.createElement('button'); 
 			nouveauBtn.textContent = chapters[chapitre].boutons[i].titre; 
 			nouveauBtn.addEventListener('click', chapters[chapitre].boutons[i].destination);
 			boutons.appendChild(nouveauBtn); 
 		  }; 
+		  
 	}
 }
 
