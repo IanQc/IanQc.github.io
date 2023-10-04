@@ -271,8 +271,7 @@ function goToChapter(chapitre) {
 			information = true;
 		}
 		if (information == true) {
-			chapters.combat = chapters.combatre;
-			chapters.combatre = {
+			chapters.combat = {
 				titre: "C'est le temps d'en finir",
 				description:
 					"Dans un instant de pure puissance, Dooku met Maître Kenobi hors d'état de combattre, le projetant au sol dans une torsion spectaculaire. La salle résonne du fracas de métal, annonçant une pause fatale dans le duel. La rage vous envahit, colère pure qui alimente chaque mouvement, chaque coup de sabre laser. Finalement, avec une habileté foudroyante, vous parvenez à prendre l'avantage. Dooku, dépassé par la furie qui brûle en vous, est contraint de s'incliner devant votre force implacable. Maintenant, la tâche qui se dresse devant vous est cruciale. Vous devez décider du sort de Dooku...",
