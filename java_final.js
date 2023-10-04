@@ -132,7 +132,7 @@ let chapters = {
 	traitre: {
 		titre: "The Chosen One",
 		description:
-			"Porté par la révélation, une détermination inflexible vous envahit. Il est temps de clore l'oppression des Siths qui saigne la galaxie. Vous faites faites volte-face et d'un geste résolu vous exécutez le Chancelier encore enchaîné à son siège. Un silence lourd et horrifiant pèse dans la salle. Dooku, sous le choc de sa défaite et de la mort de son Maître demeure figé sur place, son regard empreint d'une terreur glaciale. Sans hésiter, vous exécutez la sentence, mettant fin pour de bon à sa menace. La galaxie respire enfin, délivrée de l'ombre qui l'accablait depuis trop longtemps.",
+			"Porté par la révélation, une rage inflexible vous envahit. Il est temps de clore l'oppression des Siths qui saigne la galaxie. Vous faites faites volte-face et d'un geste résolu vous exécutez le Chancelier encore enchaîné à son siège. Un silence lourd et horrifiant pèse dans la salle. Dooku, sous le choc de sa défaite et de la mort de son Maître demeure figé sur place, son regard empreint d'une terreur glaciale. Sans hésiter, vous exécutez la sentence, mettant fin pour de bon à sa menace. La galaxie respire enfin, délivrée de l'ombre qui l'accablait depuis trop longtemps.",
 		image: "./assets/images/trashison.webp",
 		boutons: [
 			{ titre: "Vous Gagnez", destination: "outro"
@@ -143,7 +143,7 @@ let chapters = {
 	outro: {
 		titre: "A new hope",
 		description:
-			"Maintenant que les Siths et leurs sinistres desseins ont été irrémédiablement éradiqués de la galaxie, la République peut enfin renaître et s'épanouir pleinement. Pour votre courage et les services inestimables rendus à la galaxie, vous êtes élevé au rang honorifique de Maître Jedi, et votre dévouement sera gravé dans la mémoire collective de tous les systèmes occupés, pour l'éternité.",
+			"Maintenant que les Siths et leurs sinistres empire ont été irrémédiablement éradiqués de la galaxie, la République peut enfin renaître et s'épanouir pleinement. Pour votre courage et les services inestimables rendus à la galaxie, vous êtes élevé au rang honorifique de Maître Jedi, et votre dévouement sera gravé dans la mémoire collective de tous les systèmes occupés, pour l'éternité.",
 		image: "./assets/images/outro.png",
 		audio:"./assets/audio/musique_final.mp3",
 		boutons: [
@@ -276,7 +276,6 @@ function goToChapter(chapitre) {
             });
 			boutons.appendChild(nouveauBtn); 
 		  }; 
-		  
 	}
 }
 
