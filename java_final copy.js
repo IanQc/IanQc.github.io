@@ -273,7 +273,13 @@ function goToChapter(chapitre) {
 					},
 				],
 			};
-		} else {
+		/*if (information == true) {
+			chapters.combat.boutons.push({
+				titre: "Éliminez Sidious",
+				destination: "traitre"
+			});*/
+		}
+			else {
 			chapters.combat = {
 				titre: "C'est le temps d'en finir",
 				description:
