@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "StarWars";
-    src: url(./assets/font/Starjedi.ttf) format(truetype);
+    src: url(../font/Starjedi.ttf) format(truetype);
 }
 
 body{
@@ -46,8 +46,8 @@ button {
     background-color: red;
     transition: background-color 0.3s;
     border-radius: 10px;
-    width: 9vmin;
-    height: 4vmin;
+    width: 10vmin;
+    height: 5vmin;
 }
 
 button:hover {
