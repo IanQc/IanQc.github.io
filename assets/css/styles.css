@@ -40,7 +40,6 @@ body{
 }
 
 button {
-    
     color: rgb(255, 255, 255);
     border: none;
     background-color: red;
@@ -48,6 +47,7 @@ button {
     border-radius: 10px;
     width: 10vmin;
     height: 5vmin;
+    font-weight: bold;
 }
 
 button:hover {
