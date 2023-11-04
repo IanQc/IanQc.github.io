@@ -12,6 +12,6 @@
 
 ## Diagramme
 
-![](./assets/drawio/scénario.png)
+![](./assets/drawio/schema.png)
 
 

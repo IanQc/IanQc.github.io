@@ -151,6 +151,7 @@ let change_titre = document.querySelector("#titre");
 let change_description = document.querySelector("p");
 let change_bouton = document.querySelector('.boutons');
 let information = false;
+let info2 = false;
 
 function goToChapter(chapitre) {
 	if (chapters[chapitre]) {
@@ -195,6 +196,12 @@ function goToChapter(chapitre) {
 			console.log("true")
 		}
 
+		if (chapters[chapitre] == chapters.debut) {
+			info2 = true;
+		}
+		 if (chapters[chapitre] == chapters.outro){
+			info2 = false;
+		}
 
 		if (information == true) {
 			console.log("vraie")
@@ -215,6 +222,26 @@ function goToChapter(chapitre) {
 					{titre: "Exécuter Dooku pour ses crimes", destination: "justice"}, {titre: "L'arrêter pour ses crimes", destination: "arrestation"}
 				],
 			};
+			if(info2 == true){
+				chapters.intro = {
+					titre: "Que la force soit avec toi",
+					description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
+					image: "./assets/images/jeux.jpeg",
+					audio:"./assets/audio/you-can-do-better.mp3",
+					boutons: [
+						{titre: "Continuer", destination: "debut"}
+					]
+				};
+			 }else {
+				chapters.intro =  {
+					titre: "Que la force soit avec toi",
+					description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
+					image: "./assets/images/jeux.jpeg",
+					boutons: [
+						{titre: "Continuer", destination: "debut"}
+					]
+				};
+			}
 		}
 
 		//Changement boutons
