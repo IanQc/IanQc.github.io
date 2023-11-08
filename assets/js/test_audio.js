@@ -14,6 +14,7 @@ const chapters = {
 		titre: "C'est parti",
 		description: "Vous et Obi-Wan Kenobi prenez chacun un vaisseau afin d'infiltrer le vaisseau en orbite.",
 		image: "./assets/images/debut.webp",
+		audio:"./assets/audio/flyby.mp3",
 		boutons: [
 			{titre: "Atterrir par un trou dans la coque", destination: "trou"}, {titre: "Foncer dans le Hanguar",destination: "atterir"},
 		],
@@ -23,6 +24,7 @@ const chapters = {
 		titre: "Vous atterrissez dans le hangar",
 		description: "Vous déchaînez votre pouvoir, anéantissant chaque droïde qui ose se mettre en travers de votre chemin. Votre détermination est palpable alors que vous continuez d'avancer, laissant derrière vous un sillage de débris mécaniques fumants. Maintenant, il vous faut vous frayer un chemin jusqu'au cockpit, là où se joue le destin de cette mission. Chaque pas que vous faites résonne dans les coursives métalliques du vaisseau ennemi, rappelant à tous que vous êtes la tempête qui s'abat sur eux.",
 		image: "./assets/images/attérissage.webp",
+		audio:"./assets/audio/lightsaber-ignition.mp3",
 		boutons: [
 			{titre: "Aller dans le couloir", destination: "couloir"}, {titre: "Aller dans le bureau de sécurité", destination: "bureau"}, {titre: "Prendre l'ascenseur", destination: "ascenceur"},
 		],
@@ -108,7 +110,7 @@ const chapters = {
 		titre: "Vous mourrez",
 		description: "Vous subissez un violent choc en percutant le vaisseau, la force de l'impact vous emportant dans la mort.",
 		image: "./assets/images/impact.png",
-		audio:"./assets/audio/man-of-your-talents.mp3",
+		audio:"./assets/audio/exploding.mp3",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
 		],
@@ -118,6 +120,7 @@ const chapters = {
 		titre: "Vous mourrez",
 		description: "Vous tombez dans une embuscade tendue par une multitude de droïdes, leur nombre écrasant vous submerge rapidement.",
 		image: "./assets/images/coridor.webp",
+		audio:"./assets/audio/blast-em.mp3",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
 		],
@@ -136,7 +139,8 @@ const chapters = {
 		titre: "Trahison",
 		description: "Lors de votre tentative d'arrestation, Dooku révèle que le chancelier est en réalité Darth Sidious, mais l'information arrive trop tard. Le chancelier, dans un geste soudain, vous prend au dépourvu et décime impitoyablement tous ceux présents dans la pièce.",
 		image: "./assets/images/sidious.jpg",
-		audio: "./assets/audio/musique_bad_palp.mp4",
+		audio: "./assets/audio/treason.mp3",
+		audio2:"./assets/audio/musique_bad_palp.mp4",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
 		],
@@ -144,6 +148,7 @@ const chapters = {
 };
 
 //Variables
+const son = document.createElement('audio');
 const musique = document.createElement('audio');
 let change_image = document.querySelector("img");
 let change_video = document.querySelector("video");
@@ -177,12 +182,21 @@ function goToChapter(chapitre) {
 		}
 		//Changement d'audio
 		if (chapters[chapitre].audio) {
-			musique.src = chapters[chapitre].audio;
+			son.src = chapters[chapitre].audio;
+			son.play();
+		} else {
+			son.pause();
+			son.currentTime = 0;
+		}
+		//Changement d'audio
+		if (chapters[chapitre].audio2) {
+			musique.src = chapters[chapitre].audio2;
 			musique.play();
 		} else {
 			musique.pause();
 			musique.currentTime = 0;
 		}
+		
 		//Twist
 
 		if (chapters[chapitre] == chapters.debut) {
