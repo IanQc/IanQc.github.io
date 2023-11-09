@@ -165,7 +165,7 @@ let change_titre = document.querySelector("#titre");
 let change_description = document.querySelector("p");
 let change_bouton = document.querySelector('.boutons');
 let information = false;
-
+musique.loop = true;
 
 function goToChapter(chapitre) {
 	if (chapters[chapitre]) {
