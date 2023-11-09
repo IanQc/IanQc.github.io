@@ -34,6 +34,7 @@ const chapters = {
 		titre: "Attente sereine dans l'ascenseur",
 		description: "À mi-chemin l'ascenseur bloque et vous êtes coincé",
 		image: "./assets/images/ascenceur.jpg",
+		audio:"./assets/audio/lightsaber-extinguish.mp3",
 		boutons: [
 			{titre: "Forcez les portes", destination: "forcez"}, {titre: "Passez par-dessus l'ascenseur", destination: "fosse"},
 		],
@@ -43,7 +44,8 @@ const chapters = {
 		titre: "Vous trouvez l'information!",
 		description: "Vos yeux scrutent intensément les écrans du cockpit, révélant l'impensable : le Chancelier Palpatine, en qui vous aviez placé une confiance aveugle, se révèle être un traître de la pire espèce. Son visage bienveillant dissimulait l'ombre d'une sinistre vérité : sa véritable identité est celle de Darth Sidious, le maître des Siths, orchestrant depuis l'ombre le chaos qui menace la galaxie.",
 		image: "./assets/images/information.jpg",
-		audio: "./assets/audio/musique_bad_palp.mp4",
+		audio: "./assets/audio/i-am-the-senate.mp3",
+		audio2: "./assets/audio/musique_bad_palp.mp4",
 		boutons: [
 			{titre: "Prendre le couloir", destination: "couloir"}, {titre: "Prendre l'ascenseur", destination: "ascenceur"},
 		],
@@ -61,7 +63,8 @@ const chapters = {
 	dooku: {
 		titre: "Dooku vous engage en combat",
 		description: "Vous et votre vénérable Maître Obi-Wan Kenobi êtes lancés dans un duel d'une intensité rare contre le redoutable Comte Dooku. L'air est électrifié par les éclairs de sabres laser qui s'entrechoquent, créant une danse mortelle de lumières écarlates et bleues.",
-		video: "./assets/video/combat1.mov",
+		video: "./assets/video/combat1.mp4",
+		audio: "./assets/audio/choke.mp3",
 		boutons: [
 			{titre: "Continuer", destination: "combat"}
 		],
@@ -80,7 +83,8 @@ const chapters = {
 		titre: "Vous exécutez le compte Dooku et mettez fin à la guerre",
 		description: "Vous êtes acclamé comme un héros en arrivant au temple Jedi. Cependant, l'Ordre 66 est donné par le Chancelier Palpatine/Darth Sidious, causant la mort de tous les Jedi, incluant vous.",
 		image: "./assets/images/order66.jpg",
-		audio: "./assets/audio/musique_bad_dooku.mp4",
+		audio: "./assets/audio/order66.mp3",
+		audio2:"./assets/audio/musique_bad_dooku.mp4",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
 		],
@@ -90,6 +94,7 @@ const chapters = {
 		titre: "The Chosen One",
 		description: "Porté par la révélation, une rage inflexible vous envahit. Il est temps de clore l'oppression des Siths qui saigne la galaxie. Vous faites faites volte-face et d'un geste résolu vous exécutez le Chancelier encore enchaîné à son siège. Un silence lourd et horrifiant pèse dans la salle. Dooku, sous le choc de sa défaite et de la mort de son Maître demeure figé sur place, son regard empreint d'une terreur glaciale. Sans hésiter, vous exécutez la sentence, mettant fin pour de bon à sa menace. La galaxie respire enfin, délivrée de l'ombre qui l'accablait depuis trop longtemps.",
 		image: "./assets/images/trashison.webp",
+		audio: "./assets/audio/so-be-it.mp3",
 		boutons: [
 			{titre: "Vous Gagnez", destination: "outro"}
 		],
@@ -156,7 +161,7 @@ let change_titre = document.querySelector("#titre");
 let change_description = document.querySelector("p");
 let change_bouton = document.querySelector('.boutons');
 let information = false;
-let info2 = false;
+
 
 function goToChapter(chapitre) {
 	if (chapters[chapitre]) {
@@ -197,6 +202,32 @@ function goToChapter(chapitre) {
 			musique.currentTime = 0;
 		}
 		
+		//Audio recommencer
+		if (chapters[chapitre] == chapters.debut) {
+			chapters.intro = {
+				titre: "Que la force soit avec toi",
+				description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
+				image: "./assets/images/jeux.jpeg",
+				audio:"./assets/audio/you-can-do-better.mp3",
+				boutons: [
+					{titre: "Continuer", destination: "debut"}
+				]
+			};
+		}
+		//Changement de la classe du background et retirer audio
+		if (chapters[chapitre] == chapters.outro){
+			let background = document.getElementById("jeu");
+			background.classList.remove("jeux");
+			background.classList.add("jeux2");
+			chapters.intro =  {
+				titre: "Que la force soit avec toi",
+				description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
+				image: "./assets/images/jeux.jpeg",
+				boutons: [
+					{titre: "Continuer", destination: "debut"}
+				]
+			};
+		}
 		//Twist
 
 		if (chapters[chapitre] == chapters.debut) {
@@ -209,14 +240,7 @@ function goToChapter(chapitre) {
 			information = true;
 			console.log("true")
 		}
-
-		if (chapters[chapitre] == chapters.debut) {
-			info2 = true;
-		}
-		 if (chapters[chapitre] == chapters.outro){
-			info2 = false;
-		}
-
+		
 		if (information == true) {
 			console.log("vraie")
 			chapters.combat = {
@@ -236,26 +260,6 @@ function goToChapter(chapitre) {
 					{titre: "Exécuter Dooku pour ses crimes", destination: "justice"}, {titre: "L'arrêter pour ses crimes", destination: "arrestation"}
 				],
 			};
-			if(info2 == true){
-				chapters.intro = {
-					titre: "Que la force soit avec toi",
-					description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
-					image: "./assets/images/jeux.jpeg",
-					audio:"./assets/audio/you-can-do-better.mp3",
-					boutons: [
-						{titre: "Continuer", destination: "debut"}
-					]
-				};
-			 }else {
-				chapters.intro =  {
-					titre: "Que la force soit avec toi",
-					description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
-					image: "./assets/images/jeux.jpeg",
-					boutons: [
-						{titre: "Continuer", destination: "debut"}
-					]
-				};
-			}
 		}
 
 		//Changement boutons
