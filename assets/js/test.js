@@ -6,6 +6,7 @@ const chapters = {
 		description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
 		image: "./assets/images/jeux.jpeg",
 		local:"intro",
+		audio2: "./assets/audio/ambience.mp3",
 		boutons: [
 			{titre: "Continuer", destination: "debut"}
 		]
@@ -16,6 +17,7 @@ const chapters = {
 		description: "Vous et Obi-Wan Kenobi prenez chacun un vaisseau afin d'infiltrer le vaisseau en orbite.",
 		image: "./assets/images/debut.webp",
 		audio:"./assets/audio/flyby.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"debut",
 		boutons: [
 			{titre: "Atterrir par un trou dans la coque", destination: "trou"}, {titre: "Foncer dans le Hanguar",destination: "atterir"},
@@ -27,6 +29,7 @@ const chapters = {
 		description: "Vous déchaînez votre pouvoir, anéantissant chaque droïde qui ose se mettre en travers de votre chemin. Votre détermination est palpable alors que vous continuez d'avancer, laissant derrière vous un sillage de débris mécaniques fumants. Maintenant, il vous faut vous frayer un chemin jusqu'au cockpit, là où se joue le destin de cette mission. Chaque pas que vous faites résonne dans les coursives métalliques du vaisseau ennemi, rappelant à tous que vous êtes la tempête qui s'abat sur eux.",
 		image: "./assets/images/attérissage.webp",
 		audio:"./assets/audio/lightsaber-ignition.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"atterir",
 		boutons: [
 			{titre: "Aller dans le couloir", destination: "couloir"}, {titre: "Aller dans le bureau de sécurité", destination: "bureau"}, {titre: "Prendre l'ascenseur", destination: "ascenceur"},
@@ -38,6 +41,7 @@ const chapters = {
 		description: "À mi-chemin l'ascenseur bloque et vous êtes coincé",
 		image: "./assets/images/ascenceur.jpg",
 		audio:"./assets/audio/lightsaber-extinguish.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"ascenceur",
 		boutons: [
 			{titre: "Forcez les portes", destination: "forcez"}, {titre: "Passez par-dessus l'ascenseur", destination: "fosse"},
@@ -61,6 +65,7 @@ const chapters = {
 		description: "Lorsque vous pénétrez dans la salle, une scène des plus saisissantes s'offre à vos yeux. Le Chancelier Suprême est là, menotté, retenu de force sur la chaise du capitaine. Ses yeux portent la lueur de la détresse, emprisonnés par les chaînes de son ravisseur impitoyable, Dooku, qui se tient là, intransigeant, entouré de ses gardes, tels des ombres menaçantes.",
 		image: "./assets/images/cockpit.jpeg",
 		audio:"./assets/audio/hello-there.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"fosse",
 		boutons: [
 			{titre: "Continuer", destination: "dooku"}
@@ -72,6 +77,7 @@ const chapters = {
 		description: "Vous et votre vénérable Maître Obi-Wan Kenobi êtes lancés dans un duel d'une intensité rare contre le redoutable Comte Dooku. L'air est électrifié par les éclairs de sabres laser qui s'entrechoquent, créant une danse mortelle de lumières écarlates et bleues.",
 		video: "./assets/video/combat1.mp4",
 		audio: "./assets/audio/choke.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"dooku",
 		boutons: [
 			{titre: "Continuer", destination: "combat"}
@@ -83,6 +89,7 @@ const chapters = {
 		description: "Dans un instant de pure puissance, Dooku met Maître Kenobi hors d'état de combattre, le projetant au sol dans une torsion spectaculaire. La salle résonne du fracas de métal, annonçant une pause fatale dans le duel. La rage vous envahit, colère pure qui alimente chaque mouvement, chaque coup de sabre laser. Finalement, avec une habileté foudroyante, vous parvenez à prendre l'avantage. Dooku, dépassé par la furie qui brûle en vous, est contraint de s'incliner devant votre force implacable. Maintenant, la tâche qui se dresse devant vous est cruciale. Vous devez décider du sort de Dooku...",
 		video: "./assets/video/combat2.mov",
 		audio:"./assets/audio/kill.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"combat",
 		boutons: [
 			{titre: "Exécuter Dooku pour ses crimes", destination: "justice"}, {titre: "L'arrêter pour ses crimes", destination: "arrestation"},
@@ -106,6 +113,7 @@ const chapters = {
 		description: "Porté par la révélation, une rage inflexible vous envahit. Il est temps de clore l'oppression des Siths qui saigne la galaxie. Vous faites faites volte-face et d'un geste résolu vous exécutez le Chancelier encore enchaîné à son siège. Un silence lourd et horrifiant pèse dans la salle. Dooku, sous le choc de sa défaite et de la mort de son Maître demeure figé sur place, son regard empreint d'une terreur glaciale. Sans hésiter, vous exécutez la sentence, mettant fin pour de bon à sa menace. La galaxie respire enfin, délivrée de l'ombre qui l'accablait depuis trop longtemps.",
 		image: "./assets/images/trashison.webp",
 		audio: "./assets/audio/so-be-it.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"traitre",
 		boutons: [
 			{titre: "Vous Gagnez", destination: "outro"}
@@ -130,6 +138,7 @@ const chapters = {
 		description: "Vous subissez un violent choc en percutant le vaisseau, la force de l'impact vous emportant dans la mort.",
 		image: "./assets/images/impact.png",
 		audio:"./assets/audio/exploding.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"trou",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
@@ -141,6 +150,7 @@ const chapters = {
 		description: "Vous tombez dans une embuscade tendue par une multitude de droïdes, leur nombre écrasant vous submerge rapidement.",
 		image: "./assets/images/coridor.webp",
 		audio:"./assets/audio/blast-em.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"couloir",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
@@ -152,6 +162,7 @@ const chapters = {
 		description: "À peine les portes s'entrouvrent, qu'un duo de Droideka vous pulvérise instantanément.",
 		image: "./assets/images/forcez.png",
 		audio:"./assets/audio/droidekas.mp3",
+		audio2: "./assets/audio/ambience.mp3",
 		local:"forcez",
 		boutons: [
 			{titre: "Recommencez", destination: "intro"}
@@ -179,12 +190,29 @@ let change_video = document.querySelector("video");
 let change_titre = document.querySelector("#titre");
 let change_description = document.querySelector("p");
 let change_bouton = document.querySelector('.boutons');
+let reset = document.querySelector(".reset")
 let information = false;
 musique.loop = true;
+musique.volume = 0.75
+let continuer = null;
+let temps = 0;
 
 function goToChapter(chapitre) {
 	if (chapters[chapitre]) {
-		
+		temps = musique.currentTime;
+		//Bouton reset
+		if(chapters[chapitre] == chapters.intro){
+			reset.classList.add("hidden");
+		} else {
+			reset.classList.remove("hidden");
+			reset.addEventListener("click", function(){
+			localStorage.removeItem("chapitre"); 
+			information = false;
+			goToChapter("intro");
+			musique.currentTime = 0;
+			musique.play()
+			});
+		}
 		//Changement de texte
 		change_titre.innerText = chapters[chapitre].titre;
 		change_description.innerText = chapters[chapitre].description;
@@ -213,14 +241,19 @@ function goToChapter(chapitre) {
 			son.pause();
 			son.currentTime = 0;
 		}
-		//Changement de musique
-		if (chapters[chapitre].audio2  ) {
-			musique.src = chapters[chapitre].audio2;
-			musique.play();
+		// Changement de musique d'ambiance
+		if (chapters[chapitre].audio2) {
+			if (continuer !== chapters[chapitre].audio2) {
+				continuer = chapters[chapitre].audio2;
+				musique.src = continuer;
+				musique.play();
+				//musique.currentTime = temps;
+			}
 		} else {
 			musique.pause();
-			musique.currentTime = 0;
+			//musique.currentTime = temps;
 		}
+
 		
 		//Audio recommencer
 		if (chapters[chapitre] == chapters.debut) {
@@ -229,6 +262,7 @@ function goToChapter(chapitre) {
 				description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
 				image: "./assets/images/jeux.jpeg",
 				audio:"./assets/audio/you-can-do-better.mp3",
+				audio2: "./assets/audio/ambience.mp3",
 				local:"intro",
 				boutons: [
 					{titre: "Continuer", destination: "debut"}
@@ -245,6 +279,7 @@ function goToChapter(chapitre) {
 				description: "Anakin Skywalker, vous venez tout juste de recevoir une mission d'une importance capitale. Le Chancelier Suprême a été capturé en orbite de Coruscant. Votre tâche cruciale consiste à infiltrer et à extraire le dirigeant éminent de la République Galactique. L'avenir de la galaxie repose entre vos mains, Maître Jedi. Votre expertise et votre bravoure seront mises à l'épreuve dans cette mission périlleuse, où chaque décision pourrait sceller le sort de la République et de la Force elle-même. Que la Force soit avec vous.",
 				image: "./assets/images/jeux.jpeg",
 				audio:"./assets/audio/game_over.mp3",
+				audio2: "./assets/audio/ambience.mp3",
 				local:"intro",
 				boutons: [
 					{titre: "Continuer", destination: "debut"}
@@ -261,6 +296,7 @@ function goToChapter(chapitre) {
 
 		if (chapters[chapitre] == chapters.bureau) {
 			information = true;
+			localStorage.setItem("twist", true)
 			console.log("true")
 		}
 		
@@ -271,6 +307,7 @@ function goToChapter(chapitre) {
 				description: "Dans un instant de pure puissance, Dooku met Maître Kenobi hors d'état de combattre, le projetant au sol dans une torsion spectaculaire. La salle résonne du fracas de métal, annonçant une pause fatale dans le duel. La rage vous envahit, colère pure qui alimente chaque mouvement, chaque coup de sabre laser. Finalement, avec une habileté foudroyante, vous parvenez à prendre l'avantage. Dooku, dépassé par la furie qui brûle en vous, est contraint de s'incliner devant votre force implacable. Maintenant, la tâche qui se dresse devant vous est cruciale. Vous devez décider du sort de Dooku...",
 				video: "./assets/video/combat2.mov",
 				audio:"./assets/audio/kill.mp3",
+				audio2: "./assets/audio/ambience.mp3",
 				local:"combat",
 				boutons: [
 					{titre: "Exécuter Dooku pour ses crimes", destination: "justice"}, {titre: "L'arrêter pour ses crimes", destination: "arrestation"}, {titre: "Éliminez Sidious", destination: "traitre"}
@@ -282,6 +319,7 @@ function goToChapter(chapitre) {
 				description: "Dans un instant de pure puissance, Dooku met Maître Kenobi hors d'état de combattre, le projetant au sol dans une torsion spectaculaire. La salle résonne du fracas de métal, annonçant une pause fatale dans le duel. La rage vous envahit, colère pure qui alimente chaque mouvement, chaque coup de sabre laser. Finalement, avec une habileté foudroyante, vous parvenez à prendre l'avantage. Dooku, dépassé par la furie qui brûle en vous, est contraint de s'incliner devant votre force implacable. Maintenant, la tâche qui se dresse devant vous est cruciale. Vous devez décider du sort de Dooku...",
 				video: "./assets/video/combat2.mov",
 				audio:"./assets/audio/kill.mp3",
+				audio2: "./assets/audio/ambience.mp3",
 				local:"combat",
 				boutons: [
 					{titre: "Exécuter Dooku pour ses crimes", destination: "justice"}, {titre: "L'arrêter pour ses crimes", destination: "arrestation"}
@@ -304,14 +342,26 @@ function goToChapter(chapitre) {
 		};
 		let location = chapters[chapitre];
 		localStorage.setItem("chapitre", `${location.local}`)
+		
 	}
 	
 }
 
-let sauveguarde = localStorage.getItem("chapitre")
-/*goToChapter("intro")
-goToChapter(`${sauveguarde}`)
-*/
+let sauvegarde = localStorage.getItem("chapitre");
+let twist = localStorage.getItem("twist");
+
+if (sauvegarde != undefined) {
+    goToChapter(`${sauvegarde}`);
+    if (twist === "true") {
+        information = true;
+    } else {
+        information = false;
+    }
+} else {
+    goToChapter("intro");
+}
+
+/*localStorage.clear*//*
 console.log(sauveguarde)
 
 if(sauveguarde != undefined){
@@ -319,6 +369,5 @@ if(sauveguarde != undefined){
 }
 else {
 	goToChapter("intro")
-}
+}*/
 
-/*localStorage.clear*/
