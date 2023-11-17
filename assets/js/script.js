@@ -257,7 +257,7 @@ function goToChapter(chapitre) {
 		}
 		// Changement de musique d'ambiance
 		if (chapters[chapitre].audio2) {
-			if (continuer !== chapters[chapitre].audio2) {
+			if (continuer !== chapters[chapitre].audio2 || musique.paused) {
 				continuer = chapters[chapitre].audio2;
 				musique.src = continuer;
 				musique.play();
@@ -361,13 +361,16 @@ let sauvegarde = localStorage.getItem("chapitre");
 let twist = localStorage.getItem("twist");
 
 if (sauvegarde != undefined) {
-    goToChapter(`${sauvegarde}`);
-    if (twist === "true") {
-        information = true;
+    if (sauvegarde === "intro") {
+        goToChapter("intro");
     } else {
-        information = false;
+        if (twist === "true") {
+            information = true;
+        } else {
+            information = false;
+        }
+        goToChapter(`${sauvegarde}`);
     }
 } else {
     goToChapter("intro");
 }
-
