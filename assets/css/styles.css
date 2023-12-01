@@ -8,7 +8,7 @@ body{
     display: flex;
     height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items:center;
     background-color: black;
     margin: 0
@@ -21,6 +21,7 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     min-height: 100px;
     height: 100%;
     padding:  0 2% 1% 2%;
@@ -90,13 +91,21 @@ p {
     display: none;
 }
 
+.divVol {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: end;
+}
 
+h5 {
+    color: rgb(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
 .reset{
     background-color: rgba(255, 0, 0, 0);
     color: rgb(255, 0, 0);
     border-radius: 10px;
-    width: 10vmin;
-    height: 5vmin;
     font-weight: bold;
     border: none;
     font-size: 35px;
@@ -111,3 +120,95 @@ p {
 .div-reset {
     text-align:center;
 }
+
+.mute {
+    color: red;
+}
+
+
+@media only screen and (max-width: 1000px) {
+   
+
+    .jeux{
+        width: 600px;
+        height: 750px;
+  }
+
+  .jeux2{
+    width: 600px;
+    height: 750px;
+}
+
+  .boutons button{
+    width: 180px;
+}
+
+p {font-size: 16px;}
+}
+
+@media only screen and (max-width: 650px) {
+ 
+
+    .jeux{
+        width: 400px;
+        height: 800px;
+    }
+    .jeux2{
+        width: 400px;
+        height: 800px;
+    }
+    .boutons{
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boutons button{
+        width: 250px;
+        height: 27px;
+    }
+
+    .reset{
+        text-align: center;
+    }
+
+    #titre {
+        font-size: 25px;
+    }
+    
+
+    #titre1 {
+        font-size: 40px;
+        margin: 0;
+    }  
+
+    p {font-size: 16px;}
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+.jeux{
+    width: 700px;
+     height: 800px;
+}
+.jeux2{
+    width: 700px;
+     height: 800px;
+}
+.boutons button{
+    width: 180px;
+}
+
+p {font-size: 16px;}
+
+#titre {
+    font-size: 22px;
+}
+
+}
+
+
+
+
+
