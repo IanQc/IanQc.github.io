@@ -252,18 +252,18 @@ p {font-size: 16px;}
 }
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 350px) {
  
     body{
         background-color: aliceblue;
     }
     .jeux{
-        width: 220px;
-        height: 550px;
+        width: 200px;
+        height: 450px;
     }
     .jeux2{
-        width: 220px;
-        height: 550px;
+        width: 200px;
+        height: 450px;
     }
     .boutons{
         height: 100px;
