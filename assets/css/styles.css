@@ -258,11 +258,11 @@ p {font-size: 16px;}
         background-color: aliceblue;
     }
     .jeux{
-        width: 200px;
+        width: 220px;
         height: 550px;
     }
     .jeux2{
-        width: 200px;
+        width: 220px;
         height: 550px;
     }
     .boutons{
@@ -272,8 +272,8 @@ p {font-size: 16px;}
     }
 
     .boutons button{
-        width: 250px;
-        height: 20px;
+        width: 120px;
+        height: 18px;
     }
 
     .reset{
@@ -281,15 +281,15 @@ p {font-size: 16px;}
     }
 
     #titre {
-        font-size: 20px;
+        font-size: 15px;
     }
     
 
     #titre1 {
-        font-size: 40px;
+        font-size: 25px;
         margin: 0;
     }  
 
-    p {font-size: 14px;}
+    p {font-size: 10px;}
 
 }
