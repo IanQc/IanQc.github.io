@@ -206,11 +206,11 @@ p {font-size: 16px;}
 @media only screen and (min-width: 1000px) {
 
 .jeux{
-    width: 900px;
+    width: 800px;
     height: 860px;
 }
 .jeux2{
-    width: 900px;
+    width: 800px;
      height: 860px;
 }
 .boutons button{
