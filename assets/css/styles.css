@@ -129,14 +129,14 @@ h5 {
 @media only screen and (max-width: 1000px) {
    
 
-    .jeux{
-        width: 600px;
-        height: 750px;
+ .jeux{
+    width: 600px;
+    height: 780px;
   }
 
   .jeux2{
     width: 600px;
-    height: 750px;
+    height: 780px;
 }
 
   .boutons button{
@@ -144,6 +144,22 @@ h5 {
 }
 
 p {font-size: 16px;}
+
+#titre {
+    font-size: 25px;
+}
+
+#titre1 {
+    font-size: 50px;
+    margin: 0;
+}  
+
+.reset{
+    text-align: center;
+    margin-left: 10px;
+}
+
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -231,10 +247,12 @@ p {font-size: 16px;}
     .boutons button{
         width: 250px;
         height: 20px;
+        margin: 2px;
     }
 
     .reset{
         text-align: center;
+        font-size: 24px;
     }
 
     #titre {
@@ -243,11 +261,11 @@ p {font-size: 16px;}
     
 
     #titre1 {
-        font-size: 40px;
+        font-size: 35px;
         margin: 0;
     }  
 
-    p {font-size: 14px;}
+    p {font-size: 13px;}
 
 }
 
@@ -256,12 +274,12 @@ p {font-size: 16px;}
  
 
     .jeux{
-        width: 200px;
-        height: 450px;
+        width: 230px;
+        height: 480px;
     }
     .jeux2{
-        width: 200px;
-        height: 450px;
+        width: 230px;
+        height: 480px;
     }
     .boutons{
         height: 100px;
@@ -270,16 +288,20 @@ p {font-size: 16px;}
     }
 
     .boutons button{
-        width: 120px;
-        height: 18px;
+        width: 180px;
+        height: 20px;
+        font-size: 10px;
+        margin: 2px;
     }
 
     .reset{
         text-align: center;
+        font-size: 16px;
+        margin-left: 10px;
     }
 
     #titre {
-        font-size: 15px;
+        font-size: 14px;
     }
     
 
@@ -288,20 +310,19 @@ p {font-size: 16px;}
         margin: 0;
     }  
 
-    p {font-size: 10px;}
+    p {font-size: 9px;}
 
 }
 
 @media only screen and (max-width: 200px) {
  
-    body{background-color: aliceblue;}
     .jeux{
-        width: 130px;
-        height: 270px;
+        width: 140px;
+        height: 310px;
     }
     .jeux2{
-        width: 100px;
-        height: 250px;
+        width: 140px;
+        height: 310px;
     }
     .boutons{
         height: 50px;
@@ -310,17 +331,20 @@ p {font-size: 16px;}
     }
 
     .boutons button{
-        width: 70px;
-        height: 10px;
-        font-size: 7px;
+        width: 80px;
+        height: 15px;
+        font-size: 6px;
+        margin: 2px;
     }
 
     .reset{
         text-align: center;
+        font-size: 11px;
+        margin-left: 10px;
     }
 
     #titre {
-        font-size: 10px;
+        font-size: 8px;
     }
     
 
