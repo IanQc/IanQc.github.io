@@ -21,7 +21,7 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 100px;
     height: 100%;
     padding:  0 2% 1% 2%;
@@ -38,6 +38,7 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 100px;
     height: 100%;
     padding:  0 2% 1% 2%;
@@ -205,12 +206,12 @@ p {font-size: 16px;}
 @media only screen and (min-width: 1000px) {
 
 .jeux{
-    width: 700px;
-     height: 870px;
+    width: 900px;
+    height: 860px;
 }
 .jeux2{
-    width: 700px;
-     height: 870px;
+    width: 900px;
+     height: 860px;
 }
 .boutons button{
     width: 180px;
