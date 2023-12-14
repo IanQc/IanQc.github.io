@@ -291,3 +291,44 @@ p {font-size: 16px;}
     p {font-size: 10px;}
 
 }
+
+@media only screen and (max-width: 200px) {
+ 
+    body{background-color: aliceblue;}
+    .jeux{
+        width: 130px;
+        height: 270px;
+    }
+    .jeux2{
+        width: 100px;
+        height: 250px;
+    }
+    .boutons{
+        height: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boutons button{
+        width: 70px;
+        height: 10px;
+        font-size: 7px;
+    }
+
+    .reset{
+        text-align: center;
+    }
+
+    #titre {
+        font-size: 10px;
+    }
+    
+
+    #titre1 {
+        font-size: 13px;
+        margin: 0;
+    }  
+
+    p {font-size: 6px;}
+
+}
