@@ -363,33 +363,33 @@ function goToChapter(chapitre) {
 }
 
 
-mute.addEventListener("change", function(){
-	if(mute.checked){
-		musique.muted = true
-		son.muted = true
-		localStorage.setItem("mute", true)
+mute.addEventListener("change", function() {
+	if (mute.checked) {
+	  musique.muted = true;
+	  son.muted = true;
+	  localStorage.setItem("mute", "true");
 	} else {
-		musique.muted = false
-		son.muted = false
-		localStorage.setItem("mute", false)
+	  musique.muted = false;
+	  son.muted = false;
+	  localStorage.setItem("mute", "false");
 	}
-
-})
-
+  });
+  
+  
+  let muted = localStorage.getItem("mute");
+  
+  if (muted === "true") {
+	mute.checked = true;
+	musique.muted = true;
+	son.muted = true;
+  } else {
+	mute.checked = false;
+	musique.muted = false;
+	son.muted = false;
+  }
 
 let sauvegarde = localStorage.getItem("chapitre");
 let twist = localStorage.getItem("twist");
-
-let muted = localStorage.getItem("mute")
-if(muted === "true"){
-	mute.setAttribute("checked", true)
-	musique.muted = true
-	son.muted = true
-} else {
-	mute.setAttribute("checked", false)
-	musique.muted = false
-	son.muted = false
-}
 
 if (sauvegarde != undefined) {
     if (sauvegarde === "intro") {
